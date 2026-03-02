@@ -122,29 +122,57 @@ class Program{
                     if (resposta9.ToLower() == "sim")
                     {
                     Console.WriteLine("digite o numero do carro 1 vc gostaria de comparar?");
-                        Console.WriteLine("1.1 Land Rover");
-                        Console.WriteLine("1.2 Tiguan");
-                        Console.WriteLine("1.3 Sw4");
-                        Console.WriteLine("2.1 Audi RS7");
-                        Console.WriteLine("2.2 BMW M3 CS");
-                        Console.WriteLine("2.3 mercedes ClasseS");
-                        Console.WriteLine("3.1 Mercedes A45");
-                        Console.WriteLine("3.2 BMW M135");
-                        Console.WriteLine("3.3 Golf GTI");
+                        Console.WriteLine("1 Land Rover");
+                        Console.WriteLine("2 Tiguan");
+                        Console.WriteLine("3 Sw4");
+                        Console.WriteLine("4 Audi RS7");
+                        Console.WriteLine("5 BMW M3 CS");
+                        Console.WriteLine("6 mercedes ClasseS");
+                        Console.WriteLine("7 Mercedes A45");
+                        Console.WriteLine("8 BMW M135");
+                        Console.WriteLine("9 Golf GTI");
                     string? R2 = Console.ReadLine();
+                    double R4 = Convert.ToInt32(R2);
                     Console.WriteLine("digite o numero do carro 2 vc gostaria de comparar?");
-                        Console.WriteLine("1.1 Land Rover");
-                        Console.WriteLine("1.2 Tiguan");
-                        Console.WriteLine("1.3 Sw4");
-                        Console.WriteLine("2.1 Audi RS7");
-                        Console.WriteLine("2.2 BMW M3 CS");
-                        Console.WriteLine("2.3 mercedes ClasseS");
-                        Console.WriteLine("3.1 Mercedes A45");
-                        Console.WriteLine("3.2 BMW M135");
-                        Console.WriteLine("3.3 Golf GTI");                         
+                        Console.WriteLine("1 Land Rover");
+                        Console.WriteLine("2 Tiguan");
+                        Console.WriteLine("3 Sw4");
+                        Console.WriteLine("4 Audi RS7");
+                        Console.WriteLine("5 BMW M3 CS");
+                        Console.WriteLine("6 mercedes ClasseS");
+                        Console.WriteLine("7 Mercedes A45");
+                        Console.WriteLine("8 BMW M135");
+                        Console.WriteLine("9 Golf GTI");                         
                     string? R3 = Console.ReadLine();
-                    Console.WriteLine($"{R2}");
-                    Console.WriteLine($"{R3}");        
+                    double R5 = Convert.ToInt32(R3);
+                        switch (R4)
+                        {
+                            case 1:Console.WriteLine($"{Land_Rover}");break;
+                            case 2:Console.WriteLine($"{Tiguan}");break;
+                            case 3:Console.WriteLine($"{Sw4}");break;
+                            case 4:Console.WriteLine($"{Audi_RS7}");break;
+                            case 5:Console.WriteLine($"{BMW_M3CS}");break;
+                            case 6:Console.WriteLine($"{Mercedes_ClasseS}");break;
+                            case 7:Console.WriteLine($"{Mercedes_A45}");break;
+                            case 8:Console.WriteLine($"{BMW_M135}");break;
+                            case 9:Console.WriteLine($"{Golf_GTI}");break;
+                            default: Console.WriteLine("não existe");
+                            break;
+                        }
+                        switch (R5)
+                        {
+                            case 1:Console.WriteLine($"{Land_Rover}");break;
+                            case 2:Console.WriteLine($"{Tiguan}");break;
+                            case 3:Console.WriteLine($"{Sw4}");break;
+                            case 4:Console.WriteLine($"{Audi_RS7}");break;
+                            case 5:Console.WriteLine($"{BMW_M3CS}");break;
+                            case 6:Console.WriteLine($"{Mercedes_ClasseS}");break;
+                            case 7:Console.WriteLine($"{Mercedes_A45}");break;
+                            case 8:Console.WriteLine($"{BMW_M135}");break;
+                            case 9:Console.WriteLine($"{Golf_GTI}");break;
+                            default: Console.WriteLine("não existe");
+                            break;
+                        }
                     }
                     else
                     {
@@ -153,6 +181,6 @@ class Program{
                 }
             }
         }             
- /*   }    
+ /* }    
 }*/
     
